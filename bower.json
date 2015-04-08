@@ -1,0 +1,26 @@
+{
+  "name": "es6-repl",
+  "version": "1.0.0",
+  "authors": [
+    "Jarrod Overson <jsoverson@gmail.com>"
+  ],
+  "description": "wrapper for an es6 repl",
+  "main": "./es6-repl.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [],
+  "license": "MIT",
+  "homepage": "http://github.com/jsoverson/es6-repl",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "document-register-element": "~0.3.0"
+  }
+}

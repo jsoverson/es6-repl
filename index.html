@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>&lt;es6-repl&gt;</title>
+  <script src="es6-repl.js"></script>
+  <style>
+    es6-repl {
+      width:600px;
+      height:400px;
+    }
+  </style>
+</head>
+<body>
+<es6-repl>
+class Person {
+  constructor(name) {
+    this.name = name;
+    console.log(`Hi ${name}`);
+  }
+}
+let a = new Person('carol');
+a;
+</es6-repl>
+
+</body>
+</html>
