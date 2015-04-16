@@ -9,10 +9,11 @@
           HTMLElement.prototype, {
             attachedCallback: {
               value: function() {
+                var theme = this.getAttribute('theme') || '';
                 this.style.display = 'inline-block';
                 var commands = this.textContent.trim().split('\n\n');
                 this.innerHTML = '';
-                var src = 'http://jsoverson.github.io/es6repl/#__v2:' + commands.map(encodeURIComponent).join('&&');
+                var src = 'http://jsoverson.github.io/es6repl/?theme='+theme+'#__v2:' + commands.map(encodeURIComponent).join('&&');
                 var iframe = document.createElement('iframe');
                 iframe.src = src;
                 iframe.style.border = 0;
