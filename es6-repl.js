@@ -10,9 +10,9 @@
             attachedCallback: {
               value: function() {
                 this.style.display = 'inline-block';
-                var source = this.textContent.trim();
+                var commands = this.textContent.trim().split('\n\n');
                 this.innerHTML = '';
-                var src = 'http://jsoverson.github.io/es6repl/#____' + encodeURIComponent(source);
+                var src = 'http://jsoverson.github.io/es6repl/#__v2:' + commands.map(encodeURIComponent).join('&&');
                 var iframe = document.createElement('iframe');
                 iframe.src = src;
                 iframe.style.border = 0;
